@@ -73,27 +73,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
-document.getElementById("myForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Ngăn chặn gửi form mặc định
 
-  // Lấy giá trị từ các trường nhập liệu
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-
-  // Xử lý dữ liệu theo ý đồ của bạn, ví dụ: gửi dữ liệu đến máy chủ thông qua AJAX
-  // Ví dụ sử dụng thư viện Axios
-  axios.post("/your-server-endpoint", {
-    name: name,
-    email: email,
-    message: message
-  })
-  .then(function(response) {
-    // Xử lý kết quả thành công
-    console.log(response.data);
-  })
-  .catch(function(error) {
-    // Xử lý lỗi
-    console.error(error);
-  });
-});
+ 
