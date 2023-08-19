@@ -37,6 +37,7 @@ section {
 .header {
 
     position: fixed;
+    /*đặt vị trí của phần tử là cố định và không di chuyển khi cuộn trang.*/
     top: 0;
     left: 0;
     width: 100%;
@@ -44,7 +45,9 @@ section {
     background: var(--bg--color);
     display: flex;
     justify-content: space-between;
+    /* căn chỉnh các phần tử con bên trong theo chiều ngang và tạo khoảng cách đều giữa chúng*/
     align-items: center;
+    /* căn chỉnh các phần tử con bên trong theo chiều dọc, đặt chúng ở giữa dọc.*/
     z-index: 100;
 }
 
@@ -220,6 +223,7 @@ span {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    /* cho phép các phần tử con trong container được xuống dòng khi không đủ không gian */
     gap: 2rem;
 
 }
@@ -400,7 +404,7 @@ span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 9%;
+    padding-top: 60px;
     background: var(--second-bg-color);
 
 }
@@ -442,16 +446,14 @@ span {
     }
 
     section {
-        padding: 10rem 3% 2rem;
+        padding: 10rem;
     }
 
     .sevices {
         padding-bottom: 7rem;
     }
 
-    .protfolio {
-        padding-bottom: 7rem;
-    }
+
 
     .contact {
         min-height: auto;
@@ -562,10 +564,10 @@ span {
 
     .footer {
         flex-direction: column-reverse;
+
     }
 
     .footer p {
         text-align: center;
-        margin-top: 2rem;
     }
 }
